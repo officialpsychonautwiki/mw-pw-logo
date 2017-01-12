@@ -1,0 +1,21 @@
+{
+    "name": "MediaWiki PsychonautWiki Logo ParserHook",
+    "author": "Kenan Sulayman",
+    "version": "1.0.0",
+    "url": "git@github.com:officialpsychonautwiki/mw-pw-logo.git",
+    "descriptionmsg": "mw-pw-logo",
+    "license-name": "MIT",
+    "type": "parserhook",
+    "AutoloadClasses": {
+        "PWLogo": "PWLogo.class.php"
+    },
+    "ExtensionMessagesFiles": {
+        "PWLogo": "PWLogo.i18n.php"
+    },
+    "Hooks": {
+        "ParserFirstCallInit": [
+            "PWLogo::onParserSetup"
+        ]
+    },
+    "manifest_version": 1
+}
